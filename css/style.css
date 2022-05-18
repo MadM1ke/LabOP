@@ -39,6 +39,7 @@
 :root {
 	--color-green: #00928d;
 	--color-yellow: #ffba00;
+	--color-grey-dk: #666;
 	--gap: 70px;
 }
 html {
@@ -100,6 +101,7 @@ body {
 	font-weight: 500;
 	font-size: 40px;
 	line-height: 60px;
+	color: var(--color-grey-dk);
 }
 
 .section-offset {
@@ -115,6 +117,13 @@ body {
 /* header */
 .header__wrapper {
 	padding: 40px 0;
+}
+
+.pages__nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .nav__list {
@@ -321,4 +330,105 @@ body {
 
 .footer__address {
 	font-style: normal;
+}
+
+/* ------- Страница Проекты -------- */
+
+/* Вершины Кавказа */
+.peaks-of-the-caucasus {
+}
+
+.project__wrapper {
+	width: 100%;
+}
+
+.peaks-of-the-caucasus .project__wrapper {
+	width: 100%;
+	background-image: url(../img/projects/project-001.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.project__link {
+	display: flex;
+	justify-content: center;
+	text-align: left;
+	color: #fff;
+	text-shadow: 10%;
+	text-transform: uppercase;
+}
+
+.link__wrapper {
+	padding: 150px 0;
+}
+
+.project__link-text:first-child {
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 50px;
+}
+
+.project__link-text:last-child {
+	font-weight: 800;
+	font-size: 80px;
+	line-height: 100px;
+}
+
+/* Народы России: наследники Ногая */
+.the-heirs-of-nogai {
+}
+
+.the-heirs-of-nogai .project__wrapper {
+	background-image: url(../img/projects/project-002.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.the-heirs-of-nogai .project__link {
+	text-align: center;
+}
+
+.the-heirs-of-nogai .project__link-text:first-child {
+	color: var(--color-yellow);
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 70px;
+}
+
+.the-heirs-of-nogai .project__link-text:last-child {
+	color: var(--color-green);
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 50px;
+}
+
+/* Мифы о Кавказе */
+.caucasus-myths {
+}
+
+.caucasus-myths .project__wrapper {
+	background-image: url(../img/projects/project-003.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.caucasus-myths .project__link {
+	text-align: center;
+}
+
+.caucasus-myths .project__link-text:first-child {
+	color: var(--color-yellow);
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 70px;
+}
+
+.caucasus-myths .project__link-text:last-child {
+	color: #fff;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 50px;
 }
