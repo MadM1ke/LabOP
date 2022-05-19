@@ -425,8 +425,6 @@ body {
 
 /* hero */
 .hero-project__wrapper {
-	display: flex;
-	flex-direction: column;
 }
 
 /* project info */
