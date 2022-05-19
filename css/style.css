@@ -147,19 +147,12 @@ body {
 }
 
 /* hero */
-
-.hero {
-}
-
 .hero__wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	gap: var(--gap);
-}
-
-.hero__logo {
 }
 
 .hero__name {
@@ -207,15 +200,10 @@ body {
 }
 
 /* projects */
-.projects {
-}
-.projects__wrapper {
-}
 .projects__title {
 	text-align: center;
 }
-.section-title {
-}
+
 .projects__content {
 	display: flex;
 	justify-content: center;
@@ -248,10 +236,6 @@ body {
 /* news */
 .news__title {
 	text-align: center;
-}
-
-.news__wrapper {
-	/* padding: 0 auto; */
 }
 
 .news__list {
@@ -322,15 +306,12 @@ body {
 	margin-left: 20px;
 }
 
-.footer__logo {
-}
 .footer__desc {
 	display: flex;
 	margin-bottom: 20px;
 	max-width: 400px;
 }
-.footer-copy {
-}
+
 .footer__contacts {
 	display: flex;
 	flex-direction: column;
@@ -352,9 +333,6 @@ body {
 /* ------------- Страница Проекты -------------- */
 
 /* Вершины Кавказа */
-.peaks-of-the-caucasus {
-}
-
 .project__wrapper {
 	max-width: 1700px;
 }
@@ -392,9 +370,6 @@ body {
 }
 
 /* Народы России: наследники Ногая */
-.the-heirs-of-nogai {
-}
-
 .the-heirs-of-nogai .project__wrapper {
 	background-image: url(../img/projects/project-002.jpg);
 	background-position: center;
@@ -421,9 +396,6 @@ body {
 }
 
 /* Мифы о Кавказе */
-.caucasus-myths {
-}
-
 .caucasus-myths .project__wrapper {
 	background-image: url(../img/projects/project-003.jpg);
 	background-position: center;
@@ -527,8 +499,44 @@ body {
 }
 
 .project__content-preview-desc:first-child {
+	font-weight: 500;
 	padding-bottom: 20px;
 }
 
 .project__content-preview-desc:last-child {
+}
+
+/* -----------------НОВОСТИ------------------ */
+
+/* --News-page-- */
+.news-page__wrapper {
+}
+
+.news-page__list {
+	flex-wrap: wrap;
+}
+
+.news-page__item {
+}
+
+.news-page-preview {
+	overflow: hidden;
+	border: 1px solid #e4e4e4;
+	border-radius: 5px;
+}
+
+.news-page__img {
+}
+
+.news-page__text {
+}
+
+.news-page__time {
+}
+
+.news-page__title {
+}
+
+.news-page__desc {
+	line-height: 24px;
 }
