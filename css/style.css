@@ -121,10 +121,6 @@ body {
 	padding: 20px 0;
 }
 
-.hero__logo {
-	max-width: 200px;
-}
-
 .pages__nav {
 	display: flex;
 	flex-direction: row;
@@ -143,6 +139,7 @@ body {
 }
 
 .nav__link {
+	color: var(--color-grey-dk);
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 30px;
@@ -157,6 +154,10 @@ body {
 	gap: var(--gap);
 }
 
+.hero__logo {
+	max-width: 200px;
+}
+
 .hero__name {
 	max-width: 1190px;
 	text-transform: uppercase;
@@ -168,6 +169,7 @@ body {
 	font-weight: 800;
 	font-size: 100px;
 	line-height: 120px;
+	letter-spacing: 0.08em;
 }
 
 .hero__desc:last-child {
@@ -235,13 +237,15 @@ body {
 	text-align: center;
 }
 
-.news__list-preview {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	justify-items: center;
-	grid-gap: var(--gap);
-	max-width: max-content;
+.news__content-preview {
 	margin: 0 auto;
+	max-width: calc(100% / 2);
+}
+
+.news__list-preview {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--gap);
 }
 .news__item-preview {
 	max-width: 320px;
@@ -253,6 +257,8 @@ body {
 
 .news__img-preview {
 	object-fit: cover;
+	width: 100%;
+	height: 100%;
 }
 
 .news__text-preview {
@@ -276,6 +282,7 @@ body {
 
 .news__desc-preview {
 	line-height: 24px;
+	max-width: 440px;
 }
 
 /* ---Подвал--- */
@@ -381,12 +388,12 @@ body {
 .the-heirs-of-nogai .project__link-text:first-child {
 	color: var(--color-yellow);
 	font-weight: 700;
-	font-size: 60px;
+	font-size: 50px;
 	line-height: 70px;
 }
 
 .the-heirs-of-nogai .project__link-text:last-child {
-	color: var(--color-green);
+	color: #fff;
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 50px;
@@ -407,7 +414,7 @@ body {
 .caucasus-myths .project__link-text:first-child {
 	color: var(--color-yellow);
 	font-weight: 700;
-	font-size: 60px;
+	font-size: 50px;
 	line-height: 70px;
 }
 
@@ -502,23 +509,17 @@ body {
 /* -----------------Страница "Новости"------------------ */
 
 /* ---Новости--- */
+.news__content {
+}
 
-.news {
-}
-.news__wrapper {
-}
-.news__title {
-}
 .news__list {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	justify-items: center;
-	grid-gap: var(--gap);
-	max-width: max-content;
-	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--gap);
 }
 
 .news__item {
+	max-width: 680px;
 }
 
 .news__block {
@@ -527,17 +528,18 @@ body {
 
 .news__link {
 	display: flex;
-}
-
-.news__link-wrapper {
+	flex-wrap: wrap;
 }
 
 .news__img {
 	object-fit: cover;
+	max-width: 200px;
+	height: 100%;
 }
 
 .news__text {
 	padding: 30px;
+	max-width: 480px;
 }
 .news__time {
 	display: block;
@@ -550,7 +552,7 @@ body {
 	margin: 0;
 	margin-bottom: 7px;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 30px;
 }
 .news__desc {
