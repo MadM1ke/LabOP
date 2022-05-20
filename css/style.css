@@ -42,6 +42,8 @@
 	--color-grey-dk: #666;
 	--gap: 40px;
 }
+
+/* All-settings */
 html {
 	box-sizing: border-box;
 	line-height: 0;
@@ -80,7 +82,7 @@ body {
 	background-color: #fff;
 }
 
-/* Blog */
+/* All-resets */
 .btn-reset {
 	padding: 0;
 	border: none;
@@ -114,7 +116,7 @@ body {
 	max-width: 1900px;
 }
 
-/* header */
+/* ---Шапка--- */
 .header__wrapper {
 	padding: 20px 0;
 }
@@ -146,7 +148,7 @@ body {
 	line-height: 30px;
 }
 
-/* hero */
+/* ---ПЕРВЫЙ блок--- */
 .hero__wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -175,31 +177,26 @@ body {
 	line-height: 80px;
 }
 
-/* about */
+/* ---Блок "О нас"--- */
 .about {
 	width: 100%;
 	background-color: var(--color-green);
 }
+
 .about__wrapper {
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 50px 0;
 }
+
 .about__desc {
 	max-width: 900px;
 	text-align: center;
 	color: #fff;
 }
-.about__logo {
-	position: absolute;
-	right: 0;
-	bottom: var(--gap);
-	max-width: 63px;
-}
 
-/* projects */
+/* ---Блок "Проекты"--- */
 .projects__title {
 	text-align: center;
 }
@@ -233,7 +230,7 @@ body {
 	line-height: 50px;
 }
 
-/* news */
+/* ---Блок-превью "Новости"--- */
 .news__title-preview {
 	text-align: center;
 }
@@ -281,7 +278,7 @@ body {
 	line-height: 24px;
 }
 
-/* footer */
+/* ---Подвал--- */
 .footer {
 	background-color: var(--color-green);
 }
@@ -330,9 +327,9 @@ body {
 	font-style: normal;
 }
 
-/* ------------- Страница Проекты -------------- */
+/* ------------- Страница "Проекты" -------------- */
 
-/* Вершины Кавказа */
+/* ---Вершины Кавказа--- */
 .project__wrapper {
 	max-width: 1700px;
 }
@@ -369,7 +366,7 @@ body {
 	line-height: 100px;
 }
 
-/* Народы России: наследники Ногая */
+/* ---Народы России: наследники Ногая--- */
 .the-heirs-of-nogai .project__wrapper {
 	background-image: url(../img/projects/project-002.jpg);
 	background-position: center;
@@ -395,7 +392,7 @@ body {
 	line-height: 50px;
 }
 
-/* Мифы о Кавказе */
+/* ---Мифы о Кавказе--- */
 .caucasus-myths .project__wrapper {
 	background-image: url(../img/projects/project-003.jpg);
 	background-position: center;
@@ -421,9 +418,9 @@ body {
 	line-height: 50px;
 }
 
-/* -----------* ВЕРШИНЫ КАВКАЗА *----------- */
+/* -----------Страница "Вершины Кавказа"----------- */
 
-/* project info */
+/* ---О проекте--- */
 .project__info-title-vrkz {
 	text-align: left;
 }
@@ -460,7 +457,7 @@ body {
 	font-weight: 500;
 }
 
-/* content */
+/* ---Контент проекта--- */
 .project__content-wrapper {
 	display: flex;
 	flex-direction: column;
@@ -502,9 +499,9 @@ body {
 .project__content-preview-desc:last-child {
 }
 
-/* -----------------НОВОСТИ------------------ */
+/* -----------------Страница "Новости"------------------ */
 
-/* --News-page-- */
+/* ---Новости--- */
 
 .news {
 }
@@ -518,15 +515,16 @@ body {
 	justify-items: center;
 	grid-gap: var(--gap);
 	max-width: max-content;
-	margin: 0 auto;
+	margin: auto;
 }
+
 .news__item {
 }
+
 .news__block {
 	overflow: hidden;
-	border: 1px solid #e4e4e4;
-	border-radius: 5px;
 }
+
 .news__link {
 	display: flex;
 }
@@ -535,11 +533,11 @@ body {
 }
 
 .news__img {
-	width: 200px;
 	object-fit: cover;
 }
+
 .news__text {
-	padding: 20px;
+	padding: 30px;
 }
 .news__time {
 	display: block;
