@@ -129,6 +129,7 @@ body {
 }
 
 .home__link {
+	display: inline-flex;
 	max-width: 50px;
 }
 
@@ -143,6 +144,24 @@ body {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 30px;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav__link:focus {
+	outline: 1px solid var(--color-green);
+	outline-offset: 2px;
+	border-radius: 5px;
+}
+
+.nav__link:hover {
+	border-bottom: 1px solid var(--color-green);
+}
+
+.nav__link:active {
+	color: var(--color-yellow);
+	border-bottom: 1px solid var(--color-green);
+	border-radius: 0;
+	outline: transparent;
 }
 
 /* ---ПЕРВЫЙ блок--- */
@@ -154,8 +173,12 @@ body {
 	gap: var(--gap);
 }
 
-.hero__logo {
+.hero__img-logo {
 	max-width: 200px;
+}
+
+.hero__img-text {
+	max-width: 900px;
 }
 
 .hero__name {
@@ -208,14 +231,42 @@ body {
 	justify-content: center;
 }
 .projects__link {
+	position: relative;
 	padding: 25px 70px;
-	color: #fff;
 	border-radius: 10px;
 	background-color: var(--color-green);
+	transition: all 0.3s ease-in-out;
+}
+
+.projects__link:focus {
+	background-color: #fff;
+	outline: 1px solid var(--color-green);
+}
+
+.projects__link:focus .projects__link-text {
+	color: var(--color-green);
+}
+
+.projects__link:hover {
+	background-color: #fff;
+	outline: 1px solid var(--color-green);
+}
+
+.projects__link:hover .projects__link-text {
+	color: var(--color-green);
+}
+
+.projects__link:active {
+	background-color: rgba(0, 146, 141, 0.8);
+}
+
+.projects__link:active .projects__link-text {
+	color: #fff;
 }
 
 .projects__link-text {
 	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
 }
 
 .projects__link-text:first-child {
@@ -238,21 +289,78 @@ body {
 }
 
 .news__content-preview {
-	margin: 0 auto;
-	max-width: calc(100% / 2);
+	display: flex;
+	justify-content: center;
 }
 
 .news__list-preview {
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--gap);
+	justify-content: center;
+	max-width: 680px;
 }
+
 .news__item-preview {
 	max-width: 320px;
 }
 
 .news__block-preview {
 	overflow: hidden;
+}
+
+.news__link-preview {
+	display: flex;
+	flex-direction: column;
+	transition: all 0.3s ease-in-out;
+}
+
+.news__link-preview:focus .news__text-preview {
+	background-color: #00928d;
+}
+
+.news__link-preview:focus .news__time-preview {
+	color: #fff;
+}
+
+.news__link-preview:focus .news__sub-title-preview {
+	color: #fff;
+}
+
+.news__link-preview:focus .news__desc-preview {
+	color: #fff;
+}
+
+.news__link-preview:hover .news__text-preview {
+	background-color: var(--color-green);
+}
+
+.news__link-preview:hover .news__time-preview {
+	color: #fff;
+}
+
+.news__link-preview:hover .news__sub-title-preview {
+	color: #fff;
+}
+
+.news__link-preview:hover .news__desc-preview {
+	color: #fff;
+}
+
+.news__link-preview:active .news__text-preview {
+	background-color: #00726e;
+}
+
+.news__link-preview:active .news__time-preview {
+	color: #fff;
+}
+
+.news__link-preview:active .news__sub-title-preview {
+	color: #fff;
+}
+
+.news__link-preview:active .news__desc-preview {
+	color: #fff;
 }
 
 .news__img-preview {
@@ -263,6 +371,7 @@ body {
 
 .news__text-preview {
 	padding: 20px;
+	transition: all 0.3s ease-in-out;
 }
 
 .news__time-preview {
@@ -321,7 +430,6 @@ body {
 	flex-direction: column;
 	justify-content: flex-end;
 	text-align: right;
-	max-width: 300px;
 	line-height: 30px;
 	color: #fff;
 }
@@ -330,35 +438,52 @@ body {
 	margin-bottom: 20px;
 }
 
+.footer__email:focus {
+	color: var(--color-yellow);
+}
+
+.footer__email:hover {
+	color: var(--color-yellow);
+}
+
+.footer__email:active {
+	color: rgba(255, 186, 0, 0.8);
+}
+
 .footer__address {
 	font-style: normal;
+	max-width: 300px;
 }
 
 /* ------------- Страница "Проекты" -------------- */
 
-/* ---Вершины Кавказа--- */
-.project__wrapper {
-	max-width: 1700px;
+.projects__list {
+	padding: 0 var(--gap);
 }
 
-.peaks-of-the-caucasus .project__wrapper {
-	width: 100%;
-	background-image: url(../img/projects/project-001.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.project__link {
+.project__item {
 	display: flex;
 	justify-content: center;
 	text-align: left;
+	padding: 100px 0;
+	width: 100%;
 	color: #fff;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
-.link__wrapper {
-	padding: 100px 0;
+.project__item:hover {
+	filter: blur(10px);
+}
+.project__item:hover .project__link-wrapper {
+}
+
+.project__item:active {
+	filter: blur(10px);
+	filter: opacity(0.5);
+}
+
+.project__link-wrapper {
 }
 
 .project__link-text:first-child {
@@ -373,56 +498,46 @@ body {
 	line-height: 100px;
 }
 
-/* ---Народы России: наследники Ногая--- */
-.the-heirs-of-nogai .project__wrapper {
+.project__item-pw a {
+	text-align: center;
+}
+
+.project__item-pw .project__link-text:first-child {
+	color: var(--color-yellow);
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 70px;
+}
+
+.project__item-pw .project__link-text:last-child {
+	color: #fff;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 50px;
+}
+
+/* ---------------Вершины Кавказа-------------- */
+.project__item:nth-child(1) {
+	background-image: url(../img/projects/project-001.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* --------Народы России: наследники Ногая------ */
+.project__item:nth-child(2) {
 	background-image: url(../img/projects/project-002.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.the-heirs-of-nogai .project__link {
-	text-align: center;
-}
-
-.the-heirs-of-nogai .project__link-text:first-child {
-	color: var(--color-yellow);
-	font-weight: 700;
-	font-size: 50px;
-	line-height: 70px;
-}
-
-.the-heirs-of-nogai .project__link-text:last-child {
-	color: #fff;
-	font-weight: 700;
-	font-size: 40px;
-	line-height: 50px;
-}
-
 /* ---Мифы о Кавказе--- */
-.caucasus-myths .project__wrapper {
+.project__item:nth-child(3) {
 	background-image: url(../img/projects/project-003.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-.caucasus-myths .project__link {
-	text-align: center;
-}
-
-.caucasus-myths .project__link-text:first-child {
-	color: var(--color-yellow);
-	font-weight: 700;
-	font-size: 50px;
-	line-height: 70px;
-}
-
-.caucasus-myths .project__link-text:last-child {
-	color: #fff;
-	font-weight: 700;
-	font-size: 40px;
-	line-height: 50px;
 }
 
 /* -----------Страница "Вершины Кавказа"----------- */
@@ -509,26 +624,30 @@ body {
 /* -----------------Страница "Новости"------------------ */
 
 /* ---Новости--- */
-.news__content {
-}
-
 .news__list {
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
 	gap: var(--gap);
-}
-
-.news__item {
-	max-width: 680px;
-}
-
-.news__block {
-	overflow: hidden;
 }
 
 .news__link {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.news__link:focus {
+}
+
+.news__link:hover {
+	background-color: var(--color-green);
+}
+
+.news__link:active {
+}
+
+.news__block {
+	overflow: hidden;
 }
 
 .news__img {
@@ -538,9 +657,13 @@ body {
 }
 
 .news__text {
-	padding: 30px;
-	max-width: 480px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 20px;
+	max-width: 440px;
 }
+
 .news__time {
 	display: block;
 	margin-bottom: 10px;
@@ -552,9 +675,10 @@ body {
 	margin: 0;
 	margin-bottom: 7px;
 	font-weight: 500;
-	font-size: 18px;
-	line-height: 30px;
+	font-size: 14px;
+	line-height: 21px;
 }
 .news__desc {
+	font-size: 14px;
 	line-height: 24px;
 }
