@@ -163,6 +163,7 @@ body {
 
 .nav__link:hover {
 	border-bottom: 1px solid var(--color-green);
+	outline: transparent;
 }
 
 .nav__link:active {
