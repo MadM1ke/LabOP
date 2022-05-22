@@ -133,6 +133,14 @@ body {
 	max-width: 50px;
 }
 
+.home__link:hover {
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+.home__link:active {
+	filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.2));
+}
+
 .nav__list {
 	display: flex;
 	justify-content: flex-end;
@@ -464,56 +472,14 @@ body {
 .project__item {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	text-align: left;
-	padding: 100px 0;
 	width: 100%;
 	color: #fff;
 	text-transform: uppercase;
 	cursor: pointer;
-}
-
-.project__item:hover {
-	filter: blur(10px);
-}
-.project__item:hover .project__link-wrapper {
-}
-
-.project__item:active {
-	filter: blur(10px);
-	filter: opacity(0.5);
-}
-
-.project__link-wrapper {
-}
-
-.project__link-text:first-child {
-	font-weight: 500;
-	font-size: 40px;
-	line-height: 50px;
-}
-
-.project__link-text:last-child {
-	font-weight: 800;
-	font-size: 80px;
-	line-height: 100px;
-}
-
-.project__item-pw a {
-	text-align: center;
-}
-
-.project__item-pw .project__link-text:first-child {
-	color: var(--color-yellow);
-	font-weight: 700;
-	font-size: 50px;
-	line-height: 70px;
-}
-
-.project__item-pw .project__link-text:last-child {
-	color: #fff;
-	font-weight: 700;
-	font-size: 40px;
-	line-height: 50px;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
 }
 
 /* ---------------Вершины Кавказа-------------- */
@@ -538,6 +504,51 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.project__item:hover {
+	color: var(--color-yellow);
+	filter: drop-shadow(10px 20px 5px rgba(0, 0, 0, 0.5));
+}
+
+.project__item:active {
+	color: var(--color-green);
+	filter: none;
+	background: none;
+}
+
+.project__link-wrapper-text {
+	padding: 100px;
+}
+
+.project__link-text:first-child {
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 50px;
+}
+
+.project__link-text:last-child {
+	font-weight: 800;
+	font-size: 80px;
+	line-height: 100px;
+}
+
+.project-pw a {
+	text-align: center;
+}
+
+.project-pw .project__link-text:first-child {
+	color: var(--color-yellow);
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 50px;
+}
+
+.project-pw .project__link-text:last-child {
+	color: #fff;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 40px;
 }
 
 /* -----------Страница "Вершины Кавказа"----------- */
@@ -631,19 +642,27 @@ body {
 	gap: var(--gap);
 }
 
+.news__item {
+	width: 640px;
+}
+
 .news__link {
 	display: flex;
 	flex-wrap: wrap;
+	transition: all 0.3s ease-in-out;
 }
 
 .news__link:focus {
 }
 
 .news__link:hover {
+	color: #fff;
 	background-color: var(--color-green);
 }
 
 .news__link:active {
+	color: #fff;
+	background-color: rgba(0, 146, 141, 0.8);
 }
 
 .news__block {
