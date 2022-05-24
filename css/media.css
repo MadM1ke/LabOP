@@ -1,2 +1,60 @@
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 479px) {
+	.container {
+		padding: 0;
+	}
+	.nav__list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 5px;
+	}
+	/* Главная */
+	.hero__wrapper {
+	}
+
+	.hero__img-logo {
+		max-width: 100px;
+	}
+
+	.hero__img-logo {
+		max-width: 100px;
+	}
+
+	.hero__img-text {
+		max-width: 300px;
+	}
+
+	/* Новости */
+	.article__sub-title-preview {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.article__desc-preview {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	/* Подвал */
+
+	.footer__wrapper {
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	.footer__content {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1440px) {
 }
