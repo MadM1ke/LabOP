@@ -116,6 +116,11 @@ body {
 }
 
 /* ---Шапка--- */
+.header {
+	margin-bottom: var(--gap);
+	box-shadow: 0px 10px 10px rgb(0 0 0 / 10%);
+}
+
 .header__wrapper {
 	padding: 20px 0;
 }
@@ -150,7 +155,6 @@ body {
 	color: var(--color-grey-dk);
 	font-weight: 500;
 	font-size: 20px;
-
 	transition: all 0.3s ease-in-out;
 }
 
@@ -177,16 +181,15 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
 	gap: var(--gap);
 }
 
 .hero__img-logo {
-	max-width: 200px;
+	max-width: 10%;
 }
 
 .hero__img-text {
-	max-width: 900px;
+	max-width: 40%;
 }
 
 .hero__name {
@@ -198,7 +201,6 @@ body {
 	color: var(--color-yellow);
 	font-weight: 800;
 	font-size: 100px;
-
 	letter-spacing: 0.08em;
 }
 
@@ -228,169 +230,161 @@ body {
 }
 
 /* ---Блок "Проекты"--- */
-.projects__title {
+.projects-preview__title {
 	text-align: center;
 }
 
-.projects__content {
+.projects-preview__link-wrapper {
 	display: flex;
+
 	justify-content: center;
 }
-.projects__link {
+.projects-preview__link {
 	padding: 25px 70px;
 	border-radius: 10px;
 	background-color: var(--color-green);
 	transition: all 0.3s ease-in-out;
 }
 
-.projects__link:focus {
+.projects-preview__link:focus {
 	background-color: #fff;
 	outline: 1px solid var(--color-green);
 }
 
-.projects__link:focus .projects__link-text {
+.projects-preview__link:focus .projects-preview__link-text {
 	color: var(--color-green);
 }
 
-.projects__link:hover {
+.projects-preview__link:hover {
 	background-color: #fff;
 	outline: 1px solid var(--color-green);
 }
 
-.projects__link:hover .projects__link-text {
+.projects-preview__link:hover .projects-preview__link-text {
 	color: var(--color-green);
 }
 
-.projects__link:active {
+.projects-preview__link:active {
 	background-color: rgba(0, 146, 141, 0.8);
 }
 
-.projects__link:active .projects__link-text {
+.projects-preview__link:active .projects-preview__link-text {
 	color: #fff;
 }
 
-.projects__link-text {
+.projects-preview__link-text {
 	text-transform: uppercase;
 	transition: all 0.3s ease-in-out;
 }
 
-.projects__link-text:first-child {
+.projects-preview__link-text:first-child {
 	color: #fff;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 24px;
 }
 
-.projects__link-text:last-child {
+.projects-preview__link-text:last-child {
 	color: #fff;
 	font-weight: 800;
 	font-size: 40px;
 }
 
 /* ---Блок-превью "Новости"--- */
-.article__title-preview {
+.article-preview__title {
 	text-align: center;
 }
 
-.article__content-preview {
-	display: flex;
-	justify-content: center;
+.articles-preview__content-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	grid-gap: var(--gap);
+	margin: 0 auto;
+	max-width: max-content;
 }
 
-.article__list-preview {
-	display: flex;
-	flex-wrap: wrap;
-	gap: var(--gap);
-	justify-content: center;
-	max-width: 680px;
-}
-
-.article__item-preview {
-	max-width: 320px;
-}
-
-.article__block-preview {
+.articles-preview__content {
 	overflow: hidden;
+	max-width: 400px;
 }
 
-.article__link-preview {
+.articles-preview__link {
 	display: flex;
 	flex-direction: column;
 	transition: all 0.3s ease-in-out;
 }
 
-.article__link-preview:focus .article__text-preview {
+.articles-preview__link:focus .articles-preview__text {
 	background-color: #00928d;
 }
 
-.article__link-preview:focus .article__time-preview {
+.articles-preview__link:focus .articles-preview__time {
 	color: #fff;
 }
 
-.article__link-preview:focus .article__sub-title-preview {
+.articles-preview__link:focus .articles-preview__sub-title {
 	color: #fff;
 }
 
-.article__link-preview:focus .article__desc-preview {
+.articles-preview__link:focus .articles-preview__desc {
 	color: #fff;
 }
 
-.article__link-preview:hover .article__text-preview {
+.articles-preview__link:hover .articles-preview__text {
 	background-color: var(--color-green);
 }
 
-.article__link-preview:hover .article__time-preview {
+.articles-preview__link:hover .articles-preview__time {
 	color: #fff;
 }
 
-.article__link-preview:hover .article__sub-title-preview {
+.articles-preview__link:hover .articles-preview__sub-title {
 	color: #fff;
 }
 
-.article__link-preview:hover .article__desc-preview {
+.articles-preview__link:hover .articles-preview__desc {
 	color: #fff;
 }
 
-.article__link-preview:active .article__text-preview {
+.articles-preview__link:active .articles-preview__text {
 	background-color: #00726e;
 }
 
-.article__link-preview:active .article__time-preview {
+.articles-preview__link:active .articles-preview__time {
 	color: #fff;
 }
 
-.article__link-preview:active .article__sub-title-preview {
+.articles-preview__link:active .articles-preview__sub-title {
 	color: #fff;
 }
 
-.article__link-preview:active .article__desc-preview {
+.articles-preview__link:active .articles-preview__desc {
 	color: #fff;
 }
 
-.article__img-preview {
+.articles-preview__img {
 	object-fit: cover;
-	max-width: 320px;
 }
 
-.article__text-preview {
+.articles-preview__text {
 	padding: 20px;
+	height: 150px;
 	transition: all 0.3s ease-in-out;
 }
 
-.article__time-preview {
+.articles-preview__time {
 	display: block;
-	margin-bottom: 10px;
+	padding-bottom: 10px;
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 12px;
 }
-.article__sub-title-preview {
-	margin: 0;
-	margin-bottom: 5px;
+.articles-preview__sub-title {
+	padding-bottom: 5px;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 16px;
 }
 
-.article__desc-preview {
-	max-width: 440px;
+.articles-preview__desc {
 	font-size: 14px;
 }
 
@@ -400,7 +394,6 @@ body {
 }
 
 .footer__wrapper {
-	position: relative;
 	display: flex;
 	justify-content: space-between;
 	padding: var(--gap) 0;
