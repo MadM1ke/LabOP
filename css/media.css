@@ -10,11 +10,10 @@
 	--gap-50: 50px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 476px) {
+@media screen and (max-width: 476px) {
 	.section-title {
 		padding-bottom: var(--gap-10);
 		font-size: 18px;
-		line-height: 24px;
 	}
 
 	.header {
@@ -39,7 +38,6 @@
 
 	.nav__link {
 		font-size: 14px;
-		line-height: 20px;
 	}
 
 	/* Главная */
@@ -52,7 +50,7 @@
 	}
 
 	.hero__img-text {
-		max-width: 320px;
+		max-width: 90%;
 	}
 
 	.about__wrapper {
@@ -61,7 +59,6 @@
 
 	.about__desc {
 		font-size: 16px;
-		line-height: 20px;
 	}
 
 	.article__img-preview {
@@ -75,19 +72,16 @@
 		margin-bottom: 5px;
 		font-weight: 300;
 		font-size: 12px;
-		line-height: 18px;
 	}
 	.article__sub-title-preview {
 		margin: 0;
 		margin-bottom: 3px;
 		font-weight: 500;
 		font-size: 14px;
-		line-height: 20px;
 	}
 
 	.article__desc-preview {
 		font-size: 12px;
-		line-height: 18px;
 	}
 
 	/* Подвал */
@@ -108,7 +102,7 @@
 	.footer__info {
 		margin: 0;
 		font-size: 12px;
-		line-height: 16px;
+
 		margin-bottom: var(--gap-10);
 	}
 
@@ -125,7 +119,6 @@
 		text-align: center;
 		max-width: 320px;
 		font-size: 10px;
-		line-height: 14px;
 	}
 
 	.footer__email {
@@ -149,7 +142,6 @@
 
 	.project__link-text:first-child {
 		font-size: 20px;
-		line-height: 28px;
 	}
 
 	.project__link-text:last-child {
@@ -158,15 +150,13 @@
 	}
 	.project-pw .project__link-text:first-child {
 		font-size: 20px;
-		line-height: 28px;
 	}
 
 	.project-pw .project__link-text:last-child {
 		font-size: 16px;
-		line-height: 20px;
 	}
 	/* Страница проекта "ВК" */
-	.roject__info {
+	.project__info {
 		max-width: 320px;
 	}
 
@@ -178,38 +168,35 @@
 		color: var(--color-yellow);
 		font-weight: 500;
 		font-size: 24px;
-		line-height: 30px;
 	}
 
 	.project__sub-title-word:last-child {
 		color: var(--color-green);
 		font-weight: 800;
 		font-size: 32px;
-		line-height: 40px;
 	}
 	.project__desc {
 		font-weight: 400;
 		font-size: 16px;
-		line-height: 20px;
+
 		text-align: start;
 	}
 
 	.project__content-preview {
 		display: flex;
 		flex-direction: column;
-		max-width: 320px;
+		max-width: 90%;
 	}
 
 	.project__content-preview iframe {
 		margin-bottom: var(--gap-10);
-		width: 320px;
+		width: 90%;
 		height: 150px;
 	}
 
 	.project__content-preview-text {
-		padding: 0;
+		padding: 0 10px;
 		font-size: 14px;
-		line-height: 18px;
 	}
 
 	.project__content-preview-desc:first-child {
@@ -219,16 +206,18 @@
 	/* Все новости */
 
 	.article__list {
-		display: flex;
-		flex-direction: row;
 	}
 
 	.article__item {
-		max-width: 0px;
+		max-width: 90%;
+	}
+
+	.article__link {
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	.article__img {
-		max-width: 120px;
 	}
 
 	.article__text {
@@ -243,18 +232,17 @@
 		margin-bottom: 10px;
 		font-weight: 300;
 		font-size: 10px;
-		line-height: 14px;
 	}
+
 	.article__sub-title {
 		margin: 0;
 		margin-bottom: 5px;
 		font-weight: 500;
 		font-size: 12px;
-		line-height: 16px;
 	}
+
 	.article__desc {
 		font-size: 10px;
-		line-height: 14px;
 	}
 
 	/* Страница новостей */
@@ -268,13 +256,11 @@
 
 	.article-page__title {
 		font-size: 14px;
-		line-height: 18px;
 	}
 
 	.article-page__sub-title {
 		padding-bottom: 20px;
 		font-size: 14px;
-		line-height: 18px;
 	}
 
 	.article__wrapper-info {
@@ -283,7 +269,6 @@
 
 	.article-page__sub-title {
 		font-size: 14px;
-		line-height: 18px;
 	}
 
 	.article-page__img {
@@ -296,13 +281,11 @@
 		text-align: left;
 		font-weight: 400;
 		font-size: 14px;
-		line-height: 18px;
 	}
 
 	.article-page__desc-bold {
 		font-weight: 500;
 		font-size: 14px;
-		line-height: 18px;
 	}
 
 	.article-page__map {
@@ -312,12 +295,10 @@
 	.article-page__item-ol {
 		font-weight: 500;
 		font-size: 14px;
-		line-height: 18px;
 	}
 
 	.article-page__item-ul {
 		font-weight: 400;
 		font-size: 14px;
-		line-height: 18px;
 	}
 }
