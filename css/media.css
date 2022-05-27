@@ -119,12 +119,8 @@
 	.projects__link-text:last-child {
 		font-size: 60px;
 	}
-	.projects-pw .projects__link-text:first-child {
-		font-size: 32px;
-	}
-
-	.projects-pw .projects__link-text:last-child {
-		font-size: 24px;
+	.projects-pw .projects__link-text {
+		font-size: 30px;
 	}
 
 	/* --Вершины Кавказа-- 1440*/

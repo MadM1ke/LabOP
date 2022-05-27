@@ -155,7 +155,7 @@ body {
 .nav__link {
 	color: var(--color-grey-dk);
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 22px;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -226,6 +226,7 @@ body {
 
 .about__desc {
 	max-width: 900px;
+	font-size: 18px;
 	text-align: center;
 	color: #fff;
 }
@@ -274,6 +275,7 @@ body {
 }
 
 .projects-preview__link-text {
+	line-height: 0.75;
 	text-transform: uppercase;
 	transition: all 0.3s ease-in-out;
 }
@@ -281,7 +283,7 @@ body {
 .projects-preview__link-text:first-child {
 	color: #fff;
 	font-weight: 500;
-	font-size: 24px;
+	font-size: 21px;
 }
 
 .projects-preview__link-text:last-child {
@@ -508,6 +510,11 @@ body {
 	background: none;
 }
 
+.projects__link-text {
+	margin: 0;
+	line-height: 0.75;
+}
+
 .projects__link-text:first-child {
 	font-weight: 500;
 	font-size: 40px;
@@ -520,18 +527,18 @@ body {
 
 .projects-pw .projects__link-wrapper-text {
 	text-align: center;
+	line-height: 1.5;
 }
 
-.projects-pw .projects__link-text:first-child {
+.projects-pw .projects__link-text {
 	color: var(--color-yellow);
 	font-weight: 700;
-	font-size: 40px;
+	font-size: 30px;
+	line-height: 1.5;
 }
 
-.projects-pws .projects__link-text:last-child {
+.projects-pw .projects__link-text:last-child {
 	color: #fff;
-	font-weight: 700;
-	font-size: 30px;
 }
 
 /* -----------Страница "Вершины Кавказа"----------- */
