@@ -129,13 +129,12 @@
 	}
 
 	.project__sub-title-word:first-child {
-		font-size: 40px;
-		line-height: 1;
+		padding-left: 2px;
+		font-size: 30px;
 	}
 
 	.project__sub-title-word:last-child {
 		font-size: 60px;
-		line-height: 1;
 	}
 	.project__desc {
 		font-size: 18px;
@@ -350,17 +349,17 @@
 
 	.project__sub-title {
 		margin-bottom: var(--gap-10);
+		text-transform: uppercase;
 	}
 
 	.project__sub-title-word:first-child {
-		font-size: 36px;
-		line-height: 1;
+		font-size: 20px;
 	}
 
 	.project__sub-title-word:last-child {
-		font-size: 52px;
-		line-height: 1;
+		font-size: 40px;
 	}
+
 	.project__desc {
 		font-size: 16px;
 	}
